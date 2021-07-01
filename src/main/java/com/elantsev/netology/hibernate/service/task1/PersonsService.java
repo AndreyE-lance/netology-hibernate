@@ -1,11 +1,10 @@
-package com.elantsev.netology.hibernate.service;
+package com.elantsev.netology.hibernate.service.task1;
 
-import com.elantsev.netology.hibernate.entity.User;
-import com.elantsev.netology.hibernate.repository.PersonsRepository;
+import com.elantsev.netology.hibernate.entity.task1.User;
+import com.elantsev.netology.hibernate.repository.task1.PersonsRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class PersonsService {

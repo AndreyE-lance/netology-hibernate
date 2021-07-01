@@ -1,4 +1,4 @@
-package com.elantsev.netology.hibernate.entity;
+package com.elantsev.netology.hibernate.entity.task1;
 
 import lombok.*;
 import javax.persistence.Entity;

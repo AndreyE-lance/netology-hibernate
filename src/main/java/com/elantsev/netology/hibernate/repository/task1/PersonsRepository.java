@@ -1,6 +1,6 @@
-package com.elantsev.netology.hibernate.repository;
+package com.elantsev.netology.hibernate.repository.task1;
 
-import com.elantsev.netology.hibernate.entity.User;
+import com.elantsev.netology.hibernate.entity.task1.User;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

@@ -1,6 +1,6 @@
-package com.elantsev.netology.hibernate.controller;
+package com.elantsev.netology.hibernate.controller.task1;
 
-import com.elantsev.netology.hibernate.service.PersonsService;
+import com.elantsev.netology.hibernate.service.task1.PersonsService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
