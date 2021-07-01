@@ -20,7 +20,7 @@ public class CommandLineApp implements CommandLineRunner {
     @Override
     @Transactional
     public void run(String... args) throws Exception {
-        List<User> userList = new ArrayList<>();
+        /*List<User> userList = new ArrayList<>();
         userList.add(User.builder()
                 .name("Vasia")
                 .surname("Pupkin")
@@ -45,6 +45,6 @@ public class CommandLineApp implements CommandLineRunner {
 
         for (User entity: userList) {
             entityManager.persist(entity);
-        }
+        }*/
     }
 }
