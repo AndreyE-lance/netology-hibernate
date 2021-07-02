@@ -15,7 +15,19 @@ public class PersonsController {
     }
 
     @GetMapping("/persons/by-city")
-    public String getPersonsByCity( String city){
+    public String getPersonsByCity(String city) {
         return personsService.getPersonByCity(city);
     }
+
+    @GetMapping("/persons/by-age")
+    public String getPersonsByAgeLessThan(int age) {
+        return personsService.getPersonByAgeLessThan(age);
+    }
+
+    @GetMapping("/persons/by-name-surname")
+    public String getPersonsByNameAndSurname(String name, String surname) {
+        return personsService.getPersonByNameAndSurname(name, surname);
+    }
+
+
 }
