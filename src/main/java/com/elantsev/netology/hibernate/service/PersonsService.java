@@ -19,7 +19,7 @@ public class PersonsService {
     }
 
     public String getPersonByCity(String city){
-        List<User> resultList = personsRepository.findByCityOfLiving(city);
+        List<User> resultList = personsRepository.fndByCity(city);
         var result = new StringBuilder();
         for(User u:resultList){
             result.append(u.toString());
@@ -28,7 +28,7 @@ public class PersonsService {
     }
 
     public String getPersonByAgeLessThan(int age){
-        List<User> resultList = personsRepository.findByUserIDAgeLessThan(age);
+        List<User> resultList = personsRepository.fndByAge(age);
         var result = new StringBuilder();
         for(User u:resultList){
             result.append(u.toString());
@@ -37,7 +37,7 @@ public class PersonsService {
     }
 
     public String getPersonByNameAndSurname(String name, String surname){
-        return personsRepository.findByUserIDNameAndUserIDSurname(name, surname).orElseThrow(()->new EntityNotFoundException("Такого пользователя нет")).toString();
+        return personsRepository.fndByFullName(name, surname).orElseThrow(()->new EntityNotFoundException("Такого пользователя нет")).toString();
     }
 
 }
