@@ -16,4 +16,6 @@ public interface JpaPersonRepository extends JpaRepository<User, UserID> {
     List<User> fndByAge(int age);
     @Query("select user from persons user where user.userID.name=:name and user.userID.surname=:surname")
     Optional<User> fndByFullName(String name, String surname);
+    @Query("select user from persons user where user.userID.surname=:surname")
+    Optional<User> fndBySurname(String surname);
 }

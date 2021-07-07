@@ -40,4 +40,8 @@ public class PersonsService {
         return personsRepository.fndByFullName(name, surname).orElseThrow(()->new EntityNotFoundException("Такого пользователя нет")).toString();
     }
 
+    public String getPersonBySurname(String surname){
+        return personsRepository.fndBySurname(surname).orElseThrow(()->new EntityNotFoundException("Такого пользователя нет")).toString();
+    }
+
 }
